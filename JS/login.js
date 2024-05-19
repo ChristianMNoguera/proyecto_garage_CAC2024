@@ -29,7 +29,7 @@ document.getElementById('garageOwner').addEventListener('change', function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    let miForm = document.getElementById('formularioUser');
+    let miForm = document.getElementById('formulario');
   //la variable que llamamos miForm toma el metodo del objeto documento para tomar el id
   //del formulario formularioUser
   // con adsEventListener agregamos un evento cuando se genere el evento submit llamando a la funcion 

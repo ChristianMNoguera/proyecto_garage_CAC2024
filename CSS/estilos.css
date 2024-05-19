@@ -171,6 +171,14 @@ form input[type="button"] {
     cursor: pointer;
 }
 
+form textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
 form input[type="reset"]:hover,
 form input[type="button"]:hover {
     background-color: #555;
