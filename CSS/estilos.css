@@ -177,7 +177,7 @@ form input[type="text"], input[type="email"], textarea {
 }
 
 form input[type="reset"],
-form input[type="button"]  {
+form input[type="button"], form input[type="submit"] {
     background-color: #444;
     color: #fff;
     border: none;
