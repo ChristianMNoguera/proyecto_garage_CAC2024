@@ -9,3 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.querySelector('.menu-btn').addEventListener('click', function() {
+    document.querySelector('.nav__ul').classList.toggle('active');
+});

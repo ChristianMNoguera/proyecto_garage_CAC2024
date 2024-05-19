@@ -83,6 +83,14 @@ nav {
     border-radius: 5px;
 }
 
+/* Agrega estilos para el botón de hamburguesa */
+.menu-btn {
+    display: none; /* Oculta el botón en pantallas grandes */
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
 /* Secciones principales */
 main {
     padding: 20px;
@@ -444,6 +452,35 @@ svg{
 
 /* Responsividad */
 @media (max-width: 768px) {
+
+    .menu-btn {
+        background-color: #333;
+        display: block;
+        color: wheat;
+        text-align: center;
+    }
+    
+    .nav__ul {
+        display: none; /* Oculta la lista de navegación en pantallas pequeñas */
+        flex-direction: column;
+        /* position: absolute; */
+        top: 0; /* Ajusta según sea necesario */
+        left: 0;
+        width: 100%;
+        background-color: #444;
+    }
+
+    .nav__ul li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav__ul a {
+        padding: 10px 0;
+        display: block;
+        border-bottom: 1px solid #fff;
+    }
+
     .nav__ul {
         flex-direction: column;
     }
@@ -461,4 +498,10 @@ svg{
     .seccion3__mapa-iframe {
         height: 300px;
     }
+
+    /* Estilos adicionales para el menú hamburguesa */
+    .nav__ul.active {
+    display: flex; /* Muestra la lista de navegación al hacer clic en el botón de hamburguesa */
+    }
+
 }
