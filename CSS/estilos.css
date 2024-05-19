@@ -7,7 +7,7 @@
 
 body {
     /* font-family: 'Arial', sans-serif; */
-    /* font-family: "Lato", sans-serif; */
+    font-family: "Lato", sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -23,18 +23,18 @@ header {
     text-align: center;
 }
 
-.logo__fondo {
+/* .logo__fondo {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.logo__prin {
+/* .logo__prin {
     background: url('../Media/logo.png') no-repeat center center;
     background-size: contain;
     width: 50px;
     height: 50px;
-}
+} */
 
 h1 {
     font-family: 'Bebas Neue', cursive;
@@ -134,8 +134,8 @@ main {
 }
 
 .bebas-neue {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.5em;
+    /* font-family: 'Bebas Neue', cursive; */
+    font-size: 2em;
 }
 
 .no_sombra-letra_blanca {
