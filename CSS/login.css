@@ -8,11 +8,13 @@
     box-sizing: border-box;
 }
 
+
+
 body main{
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh;
+    height: 100vh;
     background:url(../Media/img/img_login.jpg) no-repeat;
     background-size:contain;
     background-position:0 50px;
@@ -20,7 +22,6 @@ body main{
 }
 
 .form__container {
-    
     width:500px;
     background-color:transparent;
     color:#fff;
@@ -28,6 +29,7 @@ body main{
     border-radius:25px;
     padding:2.5em;
     backdrop-filter:blur(5px);
+    height: auto;
     box-shadow:0 0 5px #ffffff62;
 }
 

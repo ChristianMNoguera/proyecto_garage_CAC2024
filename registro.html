@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google  fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://kit.fontawesome.com/c1af2d25a3.js" crossorigin="anonymous"></script>
+    <title>User /Owner's Login</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo__fondo">
+            <span class="logo__prin"></span>
+            <h1 class="bebas-neue">Estacion.<span class="AR">AR</span></h1>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav__ul">
+            <li><a href="./index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+            <li><a href="./login.html"><i class="fa-solid fa-user"></i>Log in</a></li>
+            <li><a href="#unirse"><i class="fa-solid fa-handshake"></i>Unirse</a></li>
+            <li><a href="./mapa.html"><i class="fa-solid fa-handshake"></i>Mapa</a></li>
+            <li><a href="#aboutus"><i class="fa-solid fa-users-viewfinder"></i>Nosotros</a></li>
+            <li><a href="./contact-form.html"><i class="fa-solid fa-at"></i>Contacto</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <div class="form__container">
+            
+            <div class="registro_form">
+                <form action="" id="formularioPres" method="POST">
+                    <h1>Formulario de registro</h1>
+                    <div class="form__input">
+                        <div class="form__input-box">
+                            <input type="text" name="firstName" placeholder="Nombre" required>
+                            <i class='bx bxs-user-circle'></i>
+                        </div>
+                        <div class="form__input-box">
+                            <input type="text" name="lastName" placeholder="Apellido" required>
+                            <i class='bx bxs-user-circle'></i>
+                        </div>
+                        <div class="form__input-box">
+                            <input type="email" name="email" placeholder="Correo Electrónico" required>
+                            <i class='bx bxs-envelope'></i>
+                        </div>
+                        <div class="form__input-box">
+                            <input type="tel" name="phone" placeholder="Número de Teléfono" required>
+                            <i class='bx bxs-phone'></i>
+                        </div>
+                        <div class="form__input-box">
+                            <input type="password" name="password" placeholder="Contraseña" required>
+                            <i class='bx bx-lock'></i>
+                        </div>
+                        <div class="form__input-box">
+                            <input type="password" name="confirmPassword" placeholder="Confirmar Contraseña" required>
+                            <i class='bx bx-lock'></i>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn__enviar">Registrarse</button>
+
+                </form>
+
+            </div>
+
+
+        </div>
+    </main>
+    <script src="js/login.js" type="module">
+    </script>
+
+</body>
+
+</html>
