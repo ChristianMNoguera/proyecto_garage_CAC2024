@@ -18,6 +18,15 @@
 
 // console.log("js inicial cargado.");
 
+document.getElementById('garageOwner').addEventListener('change', function() {
+    const garageFields = document.getElementById('garageOwnerFields');
+    if (this.checked) {
+        garageFields.style.display = 'block';
+    } else {
+        garageFields.style.display = 'none';
+    }
+});
+
 
 document.addEventListener("DOMContentLoaded", function() {
     let miForm = document.getElementById('formularioUser');

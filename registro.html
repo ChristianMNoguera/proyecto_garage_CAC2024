@@ -37,7 +37,6 @@
 
     <main>
         <div class="form__container">
-            
             <div class="registro_form">
                 <form action="" id="formularioPres" method="POST">
                     <h1>Formulario de registro</h1>
@@ -66,17 +65,32 @@
                             <input type="password" name="confirmPassword" placeholder="Confirmar Contraseña" required>
                             <i class='bx bx-lock'></i>
                         </div>
+                        <div class="form__olvidar">
+                            <input type="checkbox" id="garageOwner" name="garageOwner">
+                            <label for="garageOwner">Registrarse como dueño de un garage</label>
+                        </div>
+                        <div id="garageOwnerFields" style="display: none;">
+                            <div class="form__input-box">
+                                <input type="text" name="garageName" placeholder="Nombre del Garage">
+                                <i class='bx bxs-building-house'></i>
+                            </div>
+                            <div class="form__input-box">
+                                <input type="text" name="garageAddress" placeholder="Dirección del Garage">
+                                <i class='bx bxs-map'></i>
+                            </div>
+                            <div class="form__input-box">
+                                <input type="number" name="garageCapacity" placeholder="Capacidad del Garage">
+                                <i class='bx bxs-car'></i>
+                            </div>
+                        </div>
                     </div>
                     <button type="submit" class="btn__enviar">Registrarse</button>
-
                 </form>
-
             </div>
-
-
         </div>
     </main>
-    <script src="js/login.js" type="module">
+    <script src="js/login.js">
+       
     </script>
 
 </body>

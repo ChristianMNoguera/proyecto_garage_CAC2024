@@ -27,7 +27,7 @@
         <ul class="nav__ul">
             <li><a href="./index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
             <li><a href="./login.html"><i class="fa-solid fa-user"></i>Log in</a></li>
-            <li><a href="#unirse"><i class="fa-solid fa-handshake"></i>Unirse</a></li>
+            <li><a href="registro.html"><i class="fa-solid fa-handshake"></i>Unirse</a></li>
             <li><a href="./mapa.html"><i class="fa-solid fa-handshake"></i>Mapa</a></li>
             <li><a href="#aboutus"><i class="fa-solid fa-users-viewfinder"></i>Nosotros</a></li>
             <li><a href="./contact-form.html"><i class="fa-solid fa-at"></i>Contacto</a></li>
@@ -38,11 +38,11 @@
     <main>
         <div class="form__container">
             <div class="usuario__form">
-                <form action="" id="formularioUser" method="POST">
+                <form action="" id="formularioUser" method="POST" onsubmit="return prevenirCarga(event)">
                     <h1>Login de usuario</h1>
                     <div class="form__input">
                         <div class="form__input-box">
-                            <input type="text" name="varEmail" placeholder="Mail registrado" required>
+                            <input type="email" name="varEmail" placeholder="Mail registrado" required>
                             <i class='bx bxs-user-circle'></i>
                         </div>
                         <div class="form__input-box">
@@ -54,9 +54,9 @@
                         <label for="recordar"><input type="checkbox" id="recordar">Recordar mis datos</label>
                         <a href="#">Olvide mi contraseña</a>
                     </div>
-                    <button type="submit" class="btn__enviar">Loguearse</button>
+                    <button type="submit" class="btn__enviar">Acceder</button>
                     <div class="form__registro">
-                        <p>No tienes una cuenta, <a href="#">regístrate</a></p>
+                        <p>No tienes una cuenta, <a href="registro.html">regístrate</a></p>
                     </div>
 
 
@@ -90,7 +90,7 @@
 
         </div>
     </main>
-    <script src="./js/login.js" type="module">
+    <script src="js/login.js" type="module">
     </script>
 
 </body>
