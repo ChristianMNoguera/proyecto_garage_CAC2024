@@ -153,7 +153,7 @@ form label {
     color: #333;
 }
 
-form input[type="text"] {
+form input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 8px;
     border: 1px solid #ddd;
@@ -162,7 +162,7 @@ form input[type="text"] {
 }
 
 form input[type="reset"],
-form input[type="button"] {
+form input[type="button"]  {
     background-color: #444;
     color: #fff;
     border: none;
@@ -171,13 +171,6 @@ form input[type="button"] {
     cursor: pointer;
 }
 
-form textarea{
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
 
 form input[type="reset"]:hover,
 form input[type="button"]:hover {
