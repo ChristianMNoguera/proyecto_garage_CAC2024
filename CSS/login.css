@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+* {
+    font-family: "Lato", sans-serif;
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+body main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:url(../Media/img/img_login.jpg) no-repeat;
+    background-size:contain;
+    background-position:0 50px;
+    background-color:#000;
+}
+
+.form__container {
+    
+    width:500px;
+    background-color:transparent;
+    color:#fff;
+    border:1px solid #fff;
+    border-radius:25px;
+    padding:2.5em;
+    backdrop-filter:blur(5px);
+    box-shadow:0 0 5px #ffffff62;
+}
+
+form > h1 {
+    font-size:40px;
+    text-align:center;
+}
+
+.form__container .form__input-box {
+    position:relative;
+    width:100%;
+    height:3em;
+    background-color:transparent;
+    margin:1em 0;
+    border:1px solid #fff;
+}
+
+.form__input-box input {
+    width:100%;
+    height:100%;
+    background:transparent;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-size:1.4em;
+    padding:.5em 3em .5em .5em;
+    text-align:center;
+}
+
+.form__input-box input::placeholder {
+    color:#eee;
+}
+
+.form__input-box i {
+    position:absolute;
+    right:15px;
+    top:20%;
+    font-size:2em;
+}
+
+/*estilos del recordar mis datos */
+
+.form__container .form__olvidar {
+    display:flex;
+    justify-content:space-between;
+    font-size:1.2em;
+    margin:1em 0;
+    color:#eee
+}
+
+.form__olvidar label input {
+    accent-color: #fff;
+    color: #fff;
+    margin-right:.5em;
+}
+
+.form__olvidar a{
+    color:#fff;
+    text-decoration:none;
+    transition:all .3s ease-in;
+}
+
+.form__olvidar a:hover {
+    text-decoration:underline;
+    text-shadow:0 0 10px gold;
+}
+
+.form__container .btn__enviar {
+    width:100%;
+    height:3em;
+    background-color:#fff;
+    border:none;
+    outline:none;
+    color:#022;
+    font-weight:600;
+    font-size:1.5em;
+}
+
+.form__registro {
+    font-size:1.3em;
+    text-align:center;
+    margin-top:.5em;
+}
+
+.form__registro p a {
+    color:#fff;
+    font-weight:600;
+    text-decoration:none;
+    transition:all .3s linear;
+}
+
+.form__registro p a:hover {
+    text-decoration:underline;
+    text-shadow:0 0 10px gold;
+
+}
+
+.dueno__form {
+    display:none;
+}

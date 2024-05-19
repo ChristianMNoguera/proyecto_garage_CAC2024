@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google  fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- conectamos la api de leaflet con la página -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!--font awesome link -->
+    <script src="https://kit.fontawesome.com/c1af2d25a3.js" crossorigin="anonymous"></script>
+
+    <!-- Hoja de estilos CSS link -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!--     Hoja de estilos especial del mapa -->
+    <link rel="stylesheet" href="css/mapa.css">
+
+    <title>Mapa:Garage's hub</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo__fondo">
+            <span class="logo__prin"></span>
+            <h1 class="bebas-neue">Estacion.<span class="AR">AR</span></h1>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav__ul">
+            <li><a href="./index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+            <li><a href="./form.html"><i class="fa-solid fa-user"></i>Log in</a></li>
+            <li><a href="#unirse"><i class="fa-solid fa-handshake"></i>Unirse</a></li>
+            <li><a href="./mapa.html"><i class="fa-solid fa-handshake"></i>Mapa</a></li>
+            <li><a href="#aboutus"><i class="fa-solid fa-users-viewfinder"></i>Nosotros</a></li>
+            <li><a href="./contact-form.html"><i class="fa-solid fa-at"></i>Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="mapa__container">
+
+            <div class="listaEstacionamientos__main">
+                <div class="mapa__lista-titulo">
+                    <h3>Lista de estacionamientos</h3>
+                </div>
+                <div id="estaNombres">
+
+                </div>
+            </div>
+            <div id="mapa__main"></div>
+        </section>
+
+
+    </main>
+
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- conecto el archivo mapa_datos.js para poder manejar los datos -->
+    <script src="./JS/mapa_datos.js"></script>
+    <!-- agrego el vinculo del archivo -->
+    <script src="./JS/mapa.js"></script>
+</body>
+
+</html>

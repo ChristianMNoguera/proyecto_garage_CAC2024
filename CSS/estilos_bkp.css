@@ -1,0 +1,249 @@
+/* Tipografía */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo__fondo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__prin {
+    background: url('../Media/logo.png') no-repeat center center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+    margin-left: 10px;
+}
+
+/* Navegación */
+nav {
+    background-color: #444;
+}
+
+.nav__ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__ul li {
+    margin: 0 15px;
+}
+
+.nav__ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.nav__ul a:hover {
+    background-color: #555;
+}
+
+/* Secciones principales */
+main {
+    padding: 20px;
+}
+
+.seccion1__img-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.seccion1__img-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.inicio__span-img {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+.seccion2__flex-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.seccion2__div-card,
+.seccion2__div-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.bebas-neue {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+}
+
+.no_sombra-letra_blanca {
+    color: #333;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.no_sombra-letra_blanca li {
+    margin-bottom: 10px;
+}
+
+/* Formularios */
+form p {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+form input[type="reset"],
+form input[type="button"] {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="reset"]:hover,
+form input[type="button"]:hover {
+    background-color: #555;
+}
+
+/* Mapa */
+.seccion3__mapa {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.seccion3__mapa-iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.btnmapa {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btnmapa:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer__flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer__flex-card {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer__flex-card p {
+    margin: 0;
+    color: #fff;
+}
+
+footer a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .nav__ul {
+        flex-direction: column;
+    }
+
+    .seccion2__flex-cont,
+    .footer__flex-container {
+        flex-direction: column;
+    }
+
+    .inicio__span-img {
+        font-size: 1.2em;
+        padding: 5px 10px;
+    }
+
+    .seccion3__mapa-iframe {
+        height: 300px;
+    }
+}
