@@ -76,6 +76,13 @@ nav {
     background-color: #555;
 }
 
+/* Active link styling */
+.nav__ul a.active {
+    background-color: cornflowerblue;
+    color: #fff;
+    border-radius: 5px;
+}
+
 /* Secciones principales */
 main {
     padding: 20px;
