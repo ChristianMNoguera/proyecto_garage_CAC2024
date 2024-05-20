@@ -7,6 +7,7 @@ let parking = [
         lng: -58.365103,
         direccion:"bla bla bla 452",
         tel: "11 5213 5681",
+        lugares:0,
     },
     {
         nombre:"La cueva del Oso" ,
@@ -14,6 +15,7 @@ let parking = [
         lng:-58.379622,
         direccion:"Alderete 1521",
         tel:"11 5621 3381",
+        lugares:5,
     },
     {   
         nombre:"Estacionamiento Chino",
@@ -21,6 +23,7 @@ let parking = [
         lng: -58.383788,
         direccion: "Chinchulandia 6566",
         tel: "11 3352 1149",
+        lugares:10,
     },
     {   
         nombre:"Peter Pan",
@@ -28,6 +31,7 @@ let parking = [
         lng: -58.434584,
         direccion:"Puerto Principe 1971",
         tel: "11 5211 9922",
+        lugares:2,
     },
     {
         nombre:"La puerta",
@@ -35,6 +39,7 @@ let parking = [
         lng: -58.444262,
         direccion: "Av. Gallo 6810",
         tel: "11 5213 9855",
+        lugares:7,
     },
     {
         nombre: "No nos pisemos",
@@ -42,6 +47,7 @@ let parking = [
         lng: -58.422203,
         direccion: "Los Caldenes 110",
         tel: "11 4023 6588",
+        lugares:1,
     },
     {
         nombre: "Caida Libre",
@@ -49,6 +55,7 @@ let parking = [
         lng: -58.406024,
         direccion: "Drago 559",
         tel: "11 4410 6991",
+        lugares:3,
     },
     {
         nombre: "Soporte 2.0",
@@ -56,5 +63,6 @@ let parking = [
         lng: -58.378859,
         direccion: "Av. Sarmiento 1420",
         tel: "11 4660 1271",
+        lugares:5,
     },
 ]

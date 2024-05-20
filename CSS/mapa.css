@@ -52,6 +52,34 @@
     cursor: pointer;
 }
 
+.leaflet-popup-content-wrapper {
+    margin:0;
+    padding:5px;
+    box-sizing:border-box;
+    border-radius:5px;
+    background:radial-gradient(at 50% 95%, #fff, #9e9e9e);
+    border:1px double #ff2727;
+}
+
+.popup-titulo {
+    width:100%;
+    text-align:center;
+    color:#000000;
+    padding:2px 0;
+    border-bottom:2px solid #be0000;
+    text-shadow:1px 1px 3px #4e4e4e;
+}
+
+.popup-dir {
+    width:100%;
+    text-align:center;
+    color:#313131;
+}
+
+.popup-lugares {
+    color:rgb(97, 1, 6);
+}
+
 
 @media only screen and (max-width: 640px) {
     .listaEstacionamientos__main {
