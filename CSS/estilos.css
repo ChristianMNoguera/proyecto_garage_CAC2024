@@ -23,19 +23,6 @@ header {
     text-align: center;
 }
 
-/* .logo__fondo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .logo__prin {
-    background: url('../Media/logo.png') no-repeat center center;
-    background-size: contain;
-    width: 50px;
-    height: 50px;
-} */
-
 h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 2.5em;
@@ -94,6 +81,7 @@ nav {
 /* Secciones principales */
 main {
     padding: 20px;
+    
 }
 
 .seccion1__img-container {

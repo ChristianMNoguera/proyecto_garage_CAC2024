@@ -3,6 +3,9 @@ const tilesProvider = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 let centroBsAs = [-34.607379, -58.383408];
 let marcadores = [];
 let mapaActual;
+
+
+
 let iconMarker = L.icon({
     iconUrl:'../Media/img/img_icono_mapa_32.png',
     iconSize:[32,42],
@@ -25,6 +28,7 @@ var popUp = L.popup();
 
 })} */
 
+
 function mostrarPopUp(evento){
     popUp
     .setLatLng(evento.latlng)
@@ -42,9 +46,15 @@ const cargarLista = () => {
 
 const crearMarcador = ()=> {
     for (i in parking) {
-        let marcador_ = L.marker([parking[i].lat, parking[i].lng], { icon: iconMarker}).addTo(mapaActual);
-        marcador_.bindPopup(`nombre: ${parking[i].nombre} <br> direccion: ${parking[i].direccion} `);
-        marcadores.push(marcador_);
+
+        let customPopup = `<h2 class="popup-titulo">${parking[i].nombre} </h2><br> <h3 class="popup-dir">dirección: <br><hr> ${parking[i].direccion} </h3><br> <p class="popup-lugares">Lugares Disponibles: ${parking[i].lugares}</p>`;
+
+        let marcador_ = L.marker([parking[i].lat, parking[i].lng], { icon: iconMarker})
+            .addTo(mapaActual);
+        marcador_
+            .bindPopup(customPopup);
+        marcadores
+            .push(marcador_);
     }
 }
 
