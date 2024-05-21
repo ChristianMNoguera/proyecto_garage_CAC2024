@@ -1,13 +1,12 @@
-*{
-    padding:0;
-    margin: 0;
+main {
     box-sizing:border-box;
-} 
+    width:100%;
+}
 
 #mapa__main {
     position: relative;
-    width: 100Vw;
-    height: 100vh;
+    width: 100%;
+    height: 80vh;
 }
 
 .mapa__container {
@@ -83,8 +82,9 @@
 
 @media only screen and (max-width: 640px) {
     .listaEstacionamientos__main {
+        box-sizing:border-box;
         position: relative;
-        width: 100vw;
+        width: 100%;
         height: 20vh;
         top: 0;
         left: 0;
@@ -95,17 +95,21 @@
     }
     .mapa__container {
         position:relative;
-        max-width:100vw;
+        width:100%;
         flex-flow:column nowrap;
         padding:0;
     }
     #mapa_main {
+        box-sizing:border-box;
         position:relative;
         margin:0px;
-        max-height:60vh;
+        height:60vh;
+        width:100%;
 
     }
     main {
+        width:100%;
         padding:0;
+        /* overflow:hidden; */
     }
 }
