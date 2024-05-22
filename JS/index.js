@@ -86,6 +86,7 @@ let contactForm = formularios[0];
 
 //funcion resetar campos para borrar los estilos de correcto/incorrecto del form aparte de borrar valores
 const resetearCampos = () => {
+    contactForm.reset();
     let allinputs = document.getElementsByTagName("input"); //obtengo todos los inputs del form.
 
     for (i in allinputs) {
@@ -112,6 +113,7 @@ contactForm.addEventListener('blur', (event) => {
     checkInputs(event);
 });
 
+let regexp = /^[0-4][0-9]  /
 
 
 //funcion para validar finalmente el form al presionar submit.
@@ -120,4 +122,5 @@ function validarContactForm(e) {
     console.log('validando formulario...');
     console.log(validarObj.validar());
     alert('El formulario se envió con éxito');
+    contactForm.reset();
 };
