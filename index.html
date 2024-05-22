@@ -31,11 +31,15 @@
         <ul class="nav__ul">
             <li><a href="./index.html" class="nav__link" id="nav-home"><i class="fa-solid fa-house"></i>Inicio</a></li>
             <li><a href="./login.html" class="nav__link" id="nav-login"><i class="fa-solid fa-user"></i>Log in</a></li>
-            <li><a href="registro.html" class="nav__link" id="nav-join"><i class="fa-solid fa-handshake"></i>Unirse</a></li>
+            <li><a href="registro.html" class="nav__link" id="nav-join"><i class="fa-solid fa-handshake"></i>Unirse</a>
+            </li>
             <li><a href="./mapa.html" class="nav__link" id="nav-map"><i class="fa-solid fa-handshake"></i>Mapa</a></li>
-            <li><a href="index.html#aboutus" class="nav__link" id="nav-about"><i class="fa-solid fa-users-viewfinder"></i>Nosotros</a></li>
-            <li><a href="index.html#contacto" class="nav__link" id="nav-contact"><i class="fa-solid fa-at"></i>Contacto</a></li>
-            <li><a href="estacionamiento.html" class="nav__link" id="nav-search"><i class="fa-solid fa-search-location"></i>Buscar Estacionamiento</a></li>
+            <li><a href="index.html#aboutus" class="nav__link" id="nav-about"><i
+                        class="fa-solid fa-users-viewfinder"></i>Nosotros</a></li>
+            <li><a href="index.html#contacto" class="nav__link" id="nav-contact"><i
+                        class="fa-solid fa-at"></i>Contacto</a></li>
+            <li><a href="estacionamiento.html" class="nav__link" id="nav-search"><i
+                        class="fa-solid fa-search-location"></i>Buscar Estacionamiento</a></li>
         </ul>
     </nav>
 
@@ -67,15 +71,18 @@
                     </ul>
                 </div>
                 <div class="seccion2__div-form" id="contacto">
-                    <form action="#contacto" >
+                    <form action="#contacto" class="contact-form">
                         <p>CONTACTANOS</p>
-                        <p><label for="name">Nombre</label><input type="text" id="form_name"></p>
-                        <p><label for="lastname">Apellido</label><input type="text" id="form_lastname"></p>
-                        <p><label for="email">Email</label><input type="email" required id="form_email"></p>
+                        <p><label for="name">Nombre</label>
+                            <input type="text" id="form_name"></p>
+                        <p><label for="lastname">Apellido</label>
+                            <input type="text" id="form_lastname"></p>
+                        <p><label for="email">Email</label>
+                            <input type="email" id="form_email"></p>
                         <p><label for="">Mensaje</label></p>
-                        <textarea name="mensaje" id="" rows="4" cols="50" required></textarea>
-                        <input type="reset" value="Borrar">
-                        <input type="submit" value="Enviar">
+                        <textarea name="mensaje" id="form_textarea" rows="4" cols="50" required></textarea>
+                        <input type="reset" value="Borrar" onclick="resetearCampos()">
+                        <input type="submit" value="Enviar" onclick="validarContactForm(event)">
                     </form>
                 </div>
             </div>
@@ -92,7 +99,10 @@
                 </div>
                 <div class="seccion2__div-card bebas-neue">
                     <h3>Mapa en tiempo real</h3>
-                    <p class="no_sombra-letra_blanca">Te presentamos un mapa de la capital federal que se actualiza en tiempo real al momento en que se indica que un estacionamiento tiene plazas libres o está totalmente ocupado, para que no tengas que andar buscando lugar y sepas exactamente a donde te vas a dirigir.</p>
+                    <p class="no_sombra-letra_blanca">Te presentamos un mapa de la capital federal que se actualiza en
+                        tiempo real al momento en que se indica que un estacionamiento tiene plazas libres o está
+                        totalmente ocupado, para que no tengas que andar buscando lugar y sepas exactamente a donde te
+                        vas a dirigir.</p>
                     <a href="./mapa.html"><button class="btnmapa">Mapa</button></a>
                 </div>
             </div>

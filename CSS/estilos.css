@@ -180,6 +180,14 @@ form input[type="button"]:hover {
     background-color: #555;
 }
 
+.input_correcto {
+    outline:2px solid green;
+}
+
+.input_incorrecto {
+    outline:2px solid rgb(189, 0, 31);
+}
+
 /* Mapa */
 .seccion3__mapa {
     margin: 20px 0;
