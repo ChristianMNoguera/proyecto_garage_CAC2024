@@ -4,20 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--google  fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/c1af2d25a3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/login.css">
-    <script src="https://kit.fontawesome.com/c1af2d25a3.js" crossorigin="anonymous"></script>
-    <script src="JS/login.js"></script>
     <title>User /Owner's Login</title>
 </head>
 
 <body>
-
     <header>
         <div class="logo__fondo">
             <span class="logo__prin"></span>
@@ -39,65 +36,64 @@
         </ul>
     </nav>
 
-
     <main>
         <div class="form__container">
             <div class="usuario__form">
-                <form action="" id="formulario" onsubmit="return prevenirCarga(event)">
+                <form id="formularioUser" onsubmit="return false;">
                     <h1>Login de usuario</h1>
                     <div class="form__input">
                         <div class="form__input-box">
-                            <input type="email" name="varEmail" placeholder="Mail registrado" required>
+                            <input type="email" name="varEmail" id="varEmailUser" placeholder="Mail registrado" required>
                             <i class='bx bxs-user-circle'></i>
                         </div>
                         <div class="form__input-box">
-                            <input type="password" name="varPassword" placeholder="Contraseña" required>
+                            <input type="password" name="varPassword" id="varPasswordUser" placeholder="Contraseña" required>
                             <i class='bx bx-lock'></i>
                         </div>
                     </div>
                     <div class="form__olvidar">
-                        <label for="recordar"><input type="checkbox" id="recordar">Recordar mis datos</label>
-                        <a href="#">Olvide mi contraseña</a>
+                        <label for="recordarUser"><input type="checkbox" id="recordarUser">Recordar mis datos</label>
+                        <a href="#">Olvidé mi contraseña</a>
                     </div>
                     <button type="submit" class="btn__enviar">Acceder</button>
                     <div class="form__registro">
-                        <p>No tienes una cuenta, <a href="registro.html">regístrate</a></p>
+                        <p>No tienes una cuenta, <a href="registro.html">Regístrate</a></p>
                     </div>
-
-
-
                 </form>
             </div>
             <div class="dueno__form">
-                <form action="" id="formularioPres" method="POST">
+                <form id="formularioOwner" onsubmit="return false;">
                     <h1>Login de Prestador</h1>
                     <div class="form__input">
                         <div class="form__input-box">
-                            <input type="text" name="varEmail" placeholder="mail registrado" required>
+                            <input type="email" name="varEmailOwner" id="varEmailOwner" placeholder="Mail registrado" required>
                             <i class='bx bxs-user-circle'></i>
                         </div>
                         <div class="form__input-box">
-                            <input type="password" name="varPassword" placeholder="contraseña" required>
+                            <input type="password" name="varPasswordOwner" id="varPasswordOwner" placeholder="Contraseña" required>
                             <i class='bx bx-lock'></i>
                         </div>
                     </div>
                     <div class="form__olvidar">
-                        <label for="recordar"><input type="checkbox" id="recordar">Recordar mis datos</label>
-                        <a href="#">Olvide mi contraseña T_T</a>
+                        <label for="recordarOwner"><input type="checkbox" id="recordarOwner">Recordar mis datos</label>
+                        <a href="#">Olvidé mi contraseña</a>
                     </div>
                     <button type="submit" class="btn__enviar">Acceder</button>
                     <div class="form__registro">
-                        <p>No tienes una cuenta, <a href="#">regístrate</a></p>
+                        <p>No tienes una cuenta, <a href="registro.html">Regístrate</a></p>
                     </div>
                 </form>
-
             </div>
-
         </div>
     </main>
-    <script src="js/login.js" type="module"></script>
-    <script src="JS/index.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/index.js"></script>
 
 </body>
 
 </html>
+
+
+  
+                        
+   
