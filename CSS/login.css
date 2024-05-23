@@ -8,17 +8,21 @@
     box-sizing: border-box;
 }
 
+body{
+    /* height: 100vh; */
+    background-color:#000;
+}
+
 
 
 body main{
     display:flex;
     justify-content:center;
     align-items:center;
-    height: 100vh;
+    /* height: 100vh; */
     background:url(../Media/img/img_login.jpg) no-repeat;
     background-size:contain;
     background-position:0 50px;
-    background-color:#000;
 }
 
 .form__container {
@@ -31,6 +35,7 @@ body main{
     backdrop-filter:blur(5px);
     height: auto;
     box-shadow:0 0 5px #ffffff62;
+
 }
 
 form > h1 {
