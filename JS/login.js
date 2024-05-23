@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault();
         if (validarCorreo(event.target)) {
             alert("Enjoy! enviaste el formulario!!!");
+            event.target.reset();
         } else {
             alert("UPS! Por favor, revisa el ingreso del correo nuevamente.");
         }
