@@ -23,7 +23,6 @@ body main{
     background:url(../Media/img/img_login.jpg) no-repeat;
     background-size:contain;
     background-position:0 50px;
-    /* background-color:#000; */
 }
 
 .form__container {
