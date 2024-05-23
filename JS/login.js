@@ -5,13 +5,15 @@
 document.addEventListener("DOMContentLoaded", function() {
     let miFormUser = document.getElementById('formularioUser');
     let miFormOwner = document.getElementById('formularioOwner');
+    let miFormulario = document.getElementById('formulario')
     //con adsEventListener agregamos un evento cuando se genere el evento submit llamando a la funcion 
     //prevenirCarga. claramente  los dos formularios usan addEventListener es un callback es decir una 
     //funcion que usa como parametro una funcion 
     //
 
-    miFormUser.addEventListener("submit", prevenirCarga);
-    miFormOwner.addEventListener("submit", prevenirCarga);
+    if (miFormUser) miFormUser .addEventListener("submit", prevenirCarga);
+    if (miFormOwner) miFormOwner .addEventListener("submit", prevenirCarga);
+    if (miFormulario) miFormulario .addEventListener("submit", prevenirCarga);
     //la funcion prevenir carga evita que se comporte predeterminadamente es decir, mediante enviarlo
     //hay un ifElse que condiciona el evento llamando a la funcion validarCorreo. Lo que retorne esa
     //funcion hace que el evento submit arroje dos tipos de alerta de mensajes
@@ -23,13 +25,15 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("UPS! Por favor, revisa el ingreso del correo nuevamente.");
         }
     }
-    //acá analizamo lo que el usuario ingresó, tanto usuario y propietario: 
+    //acá analizamos lo que el usuario ingresó, tanto usuario y propietario: 
     function validarCorreo(form) {
         let correo;
         if (form.id === "formularioUser") {
             correo = form.querySelector("#varEmailUser").value;
         } else if (form.id === "formularioOwner") {
             correo = form.querySelector("#varEmailOwner").value;
+        } else if (form.id === "formulario") {
+            correo = form.querySelector("input[name='email']").value;
         }
 
         let conteoArroba = 0;
@@ -76,4 +80,5 @@ document.getElementById('garageOwner').addEventListener('change', function() {
 
  
   
+      
     
