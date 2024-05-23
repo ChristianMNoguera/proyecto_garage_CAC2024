@@ -21,8 +21,8 @@ body main{
     align-items:center;
     /* height: 100vh; */
     background:url(../Media/img/img_login.jpg) no-repeat;
-    background-size:contain;
-    background-position:0 50px;
+    background-size:cover;
+    background-position:center;
 }
 
 .form__container {
